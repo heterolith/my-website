@@ -8,30 +8,33 @@
     <title>晴宙-官网</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
-    <!-- 引入外部CSS文件 -->
+    <!-- 引入同级样式文件 -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- ===== 新增：顶部固定公告栏（核心） ===== -->
+    <!-- 顶部固定公告栏 -->
     <div class="top-notice-bar">
         <span>本站内容为AI创作 | 2026年6-10月将全新升级</span>
         <button class="notice-detail-btn" id="noticeDetailBtn">查看详情</button>
     </div>
-
-    <!-- ===== 新增：公告详情弹窗 ===== -->
+    <!-- 公告详情弹窗 -->
     <div class="modal-overlay" id="modalOverlay">
         <div class="modal-content">
             <button class="modal-close-btn" id="modalCloseBtn">&times;</button>
             <h2 class="modal-title">网站重要公告</h2>
-            <div class="modal-body">
-                <h3>一、内容声明</h3>
-                <p>本站所有内容均为AI创作，与站主本人无任何关联，相关内容仅用于填补网页信息，不代表站主任何观点与立场。若您对内容存在疑问或发现不适宜信息，可通过站内预留渠道反馈，我们将及时处理。</p>
-                <h3>二、站点升级规划</h3>
-                <p>本站计划于2026年6月至10月进行全新升级，届时站点将迎来全新蜕变，整合各类实用信息资源，覆盖更广泛的内容领域，为用户打造更全面、便捷的信息获取平台。升级完成后，诚挚欢迎各位朋友前来探索访问！</p>
+            <!-- 公告内容滚动容器 -->
+            <div class="notice-scroll">
+                <ul class="notice-ul">
+                    <li>本站所有内容均为AI创作，<span class="important">与站主本人无任何关联</span>。</li>
+                    <li>相关内容仅用于填补网页信息，不代表站主任何观点与立场。</li>
+                    <li>若您对内容存在疑问或发现不适宜信息，可通过<a href="#contact" class="contact-link">站内预留联系方式</a>反馈，我们将及时处理。</li>
+                    <li><span class="important">本站计划于2026年6月至10月进行全新升级</span>，届时站点将迎来全新蜕变。</li>
+                    <li>整合各类实用信息资源，覆盖更广泛的内容领域。</li>
+                    <li>为用户打造更全面、便捷的信息获取平台。升级完成后，诚挚欢迎各位朋友前来探索访问！</li>
+                </ul>
             </div>
         </div>
     </div>
-
     <!-- Header -->
     <header id="header">
         <div class="container header-container">
@@ -52,7 +55,6 @@
             </div>
         </div>
     </header>
-
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container hero-content">
@@ -65,7 +67,6 @@
         </div>
         <div class="hero-decoration floating"></div>
     </section>
-
     <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
@@ -83,7 +84,6 @@
             </div>
         </div>
     </section>
-
     <!-- Skills Section -->
     <section class="skills" id="skills">
         <div class="container">
@@ -122,7 +122,6 @@
             </div>
         </div>
     </section>
-
     <!-- Projects Section -->
     <section class="projects" id="projects">
         <div class="container">
@@ -169,7 +168,6 @@
             </div>
         </div>
     </section>
-
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
@@ -184,7 +182,6 @@
                         </div>
                         <div class="contact-text">
                             <h3>邮箱</h3>
-                            <!-- 修改为指定邮箱：ineffabl@outlook -->
                             <p>ineffabl@outlook.com</p>
                         </div>
                     </div>
@@ -227,7 +224,6 @@
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -269,8 +265,7 @@
             </div>
         </div>
     </footer>
-
-    <!-- 引入外部JS文件 -->
+    <!-- 引入同级脚本文件 -->
     <script src="script.js"></script>
 </body>
 </html>
